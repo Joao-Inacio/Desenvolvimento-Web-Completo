@@ -1,0 +1,36 @@
+html{
+    background: #d2d2c1 url("img/fundo.png") ;
+}
+h1{
+    color: #828271;
+    font-size: 1.2em;
+}
+#principal{
+    flex-direction: row;
+    width: 900px;
+    margin:10px auto;
+}
+.menu{
+    background: #c5c5b2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 18px;
+    
+}
+.menu a{
+    color:#4b566a ;
+    text-decoration: none;
+    padding: 5px;
+}
+.conteundo{
+    background: #e8e8d9;
+    padding: 10px;
+}
+.imgcam{
+    border: 10px solid #c3c3ae;
+}
+footer{
+    text-align: center;
+}

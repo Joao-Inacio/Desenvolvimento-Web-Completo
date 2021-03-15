@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            
+            var data = new Date()
+            // document.write(data.getDate() + "/" + (data.getMonth() + 1) + "/" + data.getUTCFullYear())
+
+            // Adicionar ou remover dias
+            document.write(data.toString())
+            data.setDate(data.getDate() + 1)
+            document.write("<hr/>")
+            document.write(data.toString())
+            document.write("<br/> <br/> <hr/>")
+            // Adicionar ou remover meses
+            document.write(data.toString())
+            data.setMonth(data.getMonth() + 1)
+            document.write("<hr/>")
+            document.write(data.toString())
+            document.write("<br/> <br/> <hr/>")
+            // Adicionar ou remover anos
+            document.write(data.toString())
+            data.setFullYear(data.getUTCFullYear() + 1)
+            document.write("<hr/>")
+            document.write(data.toString())
+
+
+
+        </script>
+        <title>Manipulando Data</title>
+    </head>
+    <body style="padding: 30px; font-size: 22px;">
+        
+    </body>
+</html>

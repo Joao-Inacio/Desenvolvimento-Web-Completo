@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Complemento -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $("html,body").animate({scrollTop:$(this.hash).offset().top}, 800);
+                })
+            })
+        </script>
+
+        <title>My Portifolio</title>
+    </head>
+    <body>
+            <!-- Inicio cabecalho -->
+            <header>
+                <nav class="navbar navbar-expand-sm navbar-light fixed-top nav-transparente">
+                    <div class="container">
+                        <!-- Logo -->
+                    <a class="navbar-brand text-light" href="">J.I</a>
+                    <!-- Menu Hamburgue -->
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <!-- Navegacao -->
+                    <div class="collapse navbar-collapse" id=nav>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#habilidade">Trabalhos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#servicos">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+                <div class=" intro">
+                        <div class="row">
+                            <div class="col-md-12 mt-5 pt-5 info">
+                                <h1 class="tit">(<span class="titu">"Estudante de programação"</span>)</h1>
+                                <p class="sub">Cursando Análise e Desenvolvimento de Sistemas 1/6 | XXII anos | a +2 anos estudando T.I | ...</p>
+                            </div>
+                        </div>
+                </div>
+            </header>
+            <section class="caixar" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 d-flex">
+                            <div class="align-self-center ">
+                                <img class="myfoto mt-5 img-fluid rounded-circle" src="img/myperfil.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex"  id="sobre">
+                            <div class="align-self-center mt-sm-5 mt-5">
+                                <h1 class="display-3">João Inácio</h1>
+                                <p>Eu sou graduando em Análise e desenvolvimento de sistema e estudo paralelamente programação para me tornar um desenvolvedor full stack e também quero me especializar na linguagem Python e talvez no futuro eu virar um cientista de dados  </p>
+                                <a href="" download=""><button class="btn btn-dark">Baixar Resumo</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Habilidade -->
+            <div class="container mt-4">
+                <h2 class="text-center h1">que coisas estou fazendo</h2>
+            </div>
+            <section class="caixar" id="habilidade">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <img class="img-fluid w-25" src="img/html5.png" alt="">
+                            <img class="img-fluid w-25" src="img/css3.png" alt="">
+                            <img class="img-fluid w-25" src="img/javascript.png" alt="">
+                            <h4 class="pt-4">Estudando Desenvolvimento Web</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error repellendus.</p>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="contfoto">
+                                <img class="img-fluid " src="img/marketing.png" alt="">
+                            </div>
+                            <h4 class="pt-4">Empreendedorismo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perspiciatis.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contfoto">
+                                <img class="img-fluid " src="img/consulting.png" alt="">
+                            </div>
+                            <h4 class="pt-4">Freelancer</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque earum excepturi?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Trabalhos -->
+            <div class="container mt-4">
+                <h2 class="text-center h1">Tecnologias estudada</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <section class="caixar" id="servicos">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h2 class="h2 mt-3">Front-end</h2>
+                            <div class="card mt-3 mb-3">
+                                <div class="card-body">
+                                    <h3 class="mb-4">HTML5</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <h3 class="mb-4">CSS3</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <h3 class="mb-4">JavaScript</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="h2 mt-3 mb-3">Back-end</h2>
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <h3 class="mb-4">PHP</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated roxo" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">25%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <h3 class="mb-4">Python</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar w pyazul progress-bar-striped progress-bar-animated"></div>
+                                        <div class="progress-bar w-25 pyama progress-bar-striped progress-bar-animated">30%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <h3 class="mb-4">R</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated R" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%">10%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- Rodape -->
+            <footer class=" rodaper" id="contato">
+                <div class="contato">
+                <a class="rodalink" href="https://www.linkedin.com/in/jo%C3%A3o-in%C3%A1cio-228499b4/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square bx-lg'></i></a>
+                <a class="ml-3 rodalink" href="https://www.facebook.com/joao.inacio.d/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook-circle bx-lg' ></i></a>
+                <a class="ml-3 rodalink" href="https://www.instagram.com/joaoinacio.ofc/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram-alt bx-lg' ></i></a>
+                <a class="ml-3 rodalink" href="https://github.com/Joao-Inacio" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github bx-lg' ></i></a>
+                </div>
+                <div class="direitos">
+                    <p>© Copyright 2021 <a href="">João</a> . Todos os direitos reservados.</p>
+                </div>
+            </footer>
+            
+
+        
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        -->
+    </body>
+</html>

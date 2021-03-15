@@ -1,0 +1,111 @@
+html, body {
+    font-family: Merriweather sans-serif ;
+    overflow-x: hidden;
+}
+
+@media (max-width: 575.98px) {
+    html, body{
+        text-align: center;
+    }
+
+    div.contfoto{
+        margin-right:50px ;
+    }
+    nav div.container{
+        margin-right:25px;
+        margin-left: 25px;
+    }
+    footer div.contato a{
+        margin-left: 0;
+    }
+}
+/* --- Barra de Navegação --- */
+nav.nav-transparente{
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+div.contfoto img{
+    margin-left: 55px;
+    width: 90px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #9bf0e1;
+}
+.navbar-light .navbar-toggler{
+    color: rgba(245, 208, 208, 0.699);
+    border-color: rgba(223, 196, 196, 0.904);
+    background-color: #ffffff65;
+}
+/* --- Container --- */
+.caixar{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 60px 0;
+}
+.intro{
+    text-align: center;
+    height:450px;
+    background-image: url(img/progra.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.intro, .tit, .sub{
+    background-color: black;
+    color: green;
+}
+.info, .tit, .sub{
+    display: block;
+    margin: 0 auto;
+    
+}
+.titu{
+    color: white;
+}
+
+
+.myfoto{
+    width: 400px;
+    height: 400px;
+}
+
+.roxo{
+    background-color:#777BB3;
+}
+.pyazul{
+    background-color: #3776AB;
+}
+.pyama{
+    background-color: #FFD343;
+}
+.w{
+    width: 5%;
+}
+.R{
+    background-color: #3864BA;
+}
+footer{
+    padding-top: 45px;
+    padding-bottom: 50px;
+    
+
+}
+footer a.rodalink {
+    color: grey;
+    font-size: 30px;
+}
+footer div.contato{
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer div.direitos{
+    margin-left: 0%;
+    text-align: center;
+}
+a.rodalink:hover{
+    color:blue
+}
+footer a:hover{
+    color: grey;
+}

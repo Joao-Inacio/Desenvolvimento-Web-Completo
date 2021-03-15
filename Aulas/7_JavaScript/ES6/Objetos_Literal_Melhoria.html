@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            input{
+                margin:2px;
+            }
+        </style>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            let nome = "João"
+            let idade = 22
+            let sexo = "Masculino"
+            let profissao = "Programador"
+
+            let Objeto = {
+                nome: nome,
+                idade:idade,
+                sexo:sexo,
+                profissao:profissao,
+                exibirResumo: function(){
+                    console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+                } 
+            }
+            console.log(Objeto)
+            Objeto.exibirResumo()
+            
+            let Objeto2 = {
+                nome,
+                idade,
+                sexo,
+                profissao,
+                exibirResumo(){
+                    console.log(`${this.nome}, ${this.idade} anos, ${this.sexo}, é ${this.profissao}`)
+                } 
+            }
+            console.log(Objeto2)
+            Objeto2.exibirResumo()
+
+
+
+            
+        </script>
+        <title>Objeto Literal Melhoria</title>
+    </head>
+    <body>
+        
+    </body>
+</html>

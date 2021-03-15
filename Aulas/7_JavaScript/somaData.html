@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            
+            var data1 = new Date(2021, 0, 14)
+
+            var data2 = new Date(2021, 1, 23)
+
+            document.write(data1.toString())
+            document.write("<br> <hr>")
+            document.write(data2.toString())
+
+            document.write("<br> <hr>")
+
+            document.write(data1.getTime())
+            document.write("<br> <hr>")
+            document.write(data2.getTime())
+            document.write("<br> <hr>")
+            var millissiEntreDatas = Math.abs(  data1.getTime() - data2.getTime())
+
+            var milisiPorDias =  (1*24*60*60*1000)
+            document.write("<br> <hr>")
+
+            document.write(" 1 Dia tem: " + milisiPorDias + " milissegundos")
+            document.write("<br> <hr>")
+            document.write(Math.ceil(  millissiEntreDatas / milisiPorDias))
+
+        </script>
+        <title>Soma Data</title>
+    </head>
+    <body style="padding: 30px; font-size: 25px;">
+        
+    </body>
+</html>

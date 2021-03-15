@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+        <style>
+            .marcador{
+                background: #FE9D9D;
+                border: 1px solid #f94646;
+            }
+            .marcador-container{
+                background: #5df946;
+                border: 1px solid #36ae26;
+            }
+        </style>
+        <title>Confingurando o Grid</title>
+    </head>
+    <body>
+        <div class="container marcador-container">
+      
+            <h2>Largura fixa</h2>
+            <div class="row">
+                <div class="marcador col">Areia1</div>
+                <div class="marcador col">Areia2</div>
+                <div class="marcador col">Areia3</div>
+                <div class="marcador col">Areia4</div>
+            </div>
+            <h2>Largura automática (auto-layout)</h2>
+            <div class="row">
+                <div class="marcador col-4">Areia1</div>
+                <div class="marcador col-6">Areia2</div>
+                <div class="marcador col">Areia3</div>
+            </div>
+            <h2>Largura igual empilhada</h2>
+            <div class="row">
+                <div class="marcador col-sm">Areia1</div>
+                <div class="marcador col-sm">Areia2</div>
+                <div class="marcador col-sm">Areia3</div>
+            </div>
+            <h2>Ordenando</h2>
+            <div class="row">
+                <div class="marcador col-md-4 order-2">Areia1</div>
+                <div class="marcador col-md-4 order-3">Areia2</div>
+                <div class="marcador col-md-4 order-1">Areia3</div>
+            </div>
+            <h2>offset</h2>
+            <div class="row">
+                <div class="marcador col-md-6 offset-md-2">Login..</div>
+            </div>
+            <h2>offset múltiplos alinhamentos</h2>
+            <div class="row">
+                <div class="marcador col-md-3">Login2..</div>
+                <div class="marcador col-md-3 offset-md-3">Login1..</div>
+            </div>
+            <h2>Aninhamento</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    coll
+                    <div class="row">
+                        <div class="col-md-6 marcador" >
+                            row
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="bootstrap4/js/bootstrap.min.js"></script>
+    </body>
+</html>

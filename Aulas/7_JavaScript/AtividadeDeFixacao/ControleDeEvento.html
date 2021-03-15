@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                padding: 35px;
+                font-size: 28px;
+                background:whitesmoke;
+            }
+        </style>
+        <script>
+            
+            function foco() {
+                document.getElementById('campo').style.background = "yellow"
+            }
+            function SemFoco() {
+                var valorCampo = document.getElementById('campo').value 
+                if (valorCampo.length < 3) {
+                    document.getElementById('campo').style.background = "red"
+                }
+                else{
+                    document.getElementById('campo').style.background = "green"
+                }
+            }
+            
+        </script>
+        <title>Controle de evento</title>
+    </head>
+    <body>
+        <input onfocus="foco()" onblur="SemFoco()" type="text" name="" id="campo">
+    </body>
+</html>

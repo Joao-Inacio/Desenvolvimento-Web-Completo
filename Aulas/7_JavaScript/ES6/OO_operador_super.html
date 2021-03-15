@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+
+            class Animal {
+                constructor(cor, tamanho, peso){
+                    this.cor = cor
+                    this.tamanho = tamanho
+                    this.peso = peso
+                }
+                dormir(){
+                    console.log("Dormir")
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor(bico, cor, tamanho, peso){
+                    super(cor, tamanho, peso)
+                    this.bico = bico
+                }
+                voar(){
+                    console.log("Voar")
+                }
+
+            }
+            class Papagaio extends Passaro{
+                constructor(sabeFalar, cor, tamanho, peso){
+                    super("Médio", cor, tamanho, peso)
+                    this.sabeFalar = sabeFalar
+                }
+                falar(){
+                    console.log("Fala")
+                }
+            }
+
+            let papagaio = new Papagaio(true, "verde", 25, 350)
+            let passaro = new Passaro()
+            
+
+            console.log(papagaio)
+
+
+
+            
+        </script>
+        <title>Operador - Super</title>
+    </head>
+    <body>
+        
+    </body>
+</html>

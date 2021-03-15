@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            
+            class Produto {
+                constructor(descricao, preco){
+                    this.descricao = descricao
+                    this.preco = preco
+                }
+                verDescricao() {
+                    document.write(`${this.descricao} Por apenas ${this.preco} <br/>`)
+                }
+            }
+            let produto = new Produto("Notebook", 2700) 
+
+            produto.verDescricao() 
+
+            // ___________________________________________________________________________________________________
+
+            let produtoLiteral = {
+                descricao: "Notebook",
+                preco: 2500,
+                verDescricao: function(){
+                    document.write(`${this.descricao} Por apenas ${this.preco}`)
+                }
+            }
+
+            produtoLiteral.verDescricao()
+
+            
+        </script>
+        <title>Objeto Literal</title>
+    </head>
+    <body>
+        
+    </body>
+</html>
