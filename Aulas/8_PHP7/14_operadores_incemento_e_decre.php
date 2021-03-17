@@ -17,6 +17,12 @@
             echo '<br />';
             ++$n1;
             echo $n1;
+            echo '<br />';
+            $n1--;
+            echo $n1;
+            echo '<br />';
+            --$n1;
+            echo $n1;
 
             
         ?>
