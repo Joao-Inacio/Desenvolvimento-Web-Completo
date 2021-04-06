@@ -1,3 +1,8 @@
+<?php
+  if (isset($_GET['login'])) {
+    echo($_GET['login']);
+  }
+?>
 <html lang='pt-br'>
 
 <head>
@@ -40,6 +45,15 @@
               <div class="form-group">
                 <input name="senha" type="password" class="form-control" placeholder="Senha">
               </div>
+              <?php
+                  if (isset($_GET['login']) && $_GET['login'] == 'error') { 
+                      
+                  
+              ?>
+              <div class="text-danger">
+                  Usuario ou Senha inválido(s)
+              </div>
+              <?php } ?>
               <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
             </form>
           </div>
