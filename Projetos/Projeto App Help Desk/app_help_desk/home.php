@@ -1,9 +1,4 @@
-<?php
-  session_start();
-  if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado']) {
-    header('Location: index.php?login=erro2');
-  }
-?>
+<? require_once "validador_acesso.php" ?>
 <html lang='pt-br'>
   <head>
     <meta charset="utf-8" />
