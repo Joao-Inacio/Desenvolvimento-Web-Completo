@@ -45,11 +45,11 @@
                                         <div class="form-group">
                                             <label for="">Categoria</label>
                                             <select class="form-control" name="categoria" id="">
-                                                <option value="">Criação Usuário</option>
-                                                <option value="">Impressora</option>
-                                                <option value="">Hardware</option>
-                                                <option value="">Software</option>
-                                                <option value="">Rede</option>
+                                                <option>Criação Usuário</option>
+                                                <option value="impressora">Impressora</option>
+                                                <option value="hardware">Hardware</option>
+                                                <option value="software">Software</option>
+                                                <option value="rede">Rede</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
