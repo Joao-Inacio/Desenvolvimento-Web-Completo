@@ -37,14 +37,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <form action="">
+                                    <form action="registra_chamado.php" method="POST">
                                         <div class="form-group">
                                             <label for="">Título</label>
-                                            <input type="text" class="form-control" placeholder="Título">
+                                            <input name="titulo" type="text" class="form-control" placeholder="Título">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Categoria</label>
-                                            <select class="form-control" name="" id="">
+                                            <select class="form-control" name="categoria" id="">
                                                 <option value="">Criação Usuário</option>
                                                 <option value="">Impressora</option>
                                                 <option value="">Hardware</option>
@@ -54,7 +54,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="">Descrição</label>
-                                            <textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
+                                            <textarea class="form-control" name="descricao" id="" cols="30" rows="3"></textarea>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-6">
