@@ -1,3 +1,2 @@
-Pc não liga##Pc não liga bla bla bla
-Celular em pane##Celular não ligar
-Pc não liga#hardware#Pc não liga
+3#chamado José #hardware#Teste
+4#chamado Maria#impressora#Teste
