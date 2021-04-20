@@ -5,15 +5,15 @@
         protected $sobrenome = 'Silva';
         public $humor = 'Feliz';
 
-        // public function getNome(){
-        //     return $this->nome;
-        // }
-        // public function setNome($value){
-        //     if (strlen($value) >= 3) {
-        //         $this->nome = $value;
-        //     }
+        /* public function getNome(){
+            return $this->nome;
+        }
+            public function setNome($value){
+                if (strlen($value) >= 3) {
+                    $this->nome = $value;
+                }
             
-        // }
+            }*/
         public function __get($attr){
             return $this->$attr;
         }
