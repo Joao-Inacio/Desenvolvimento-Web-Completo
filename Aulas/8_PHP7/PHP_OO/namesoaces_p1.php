@@ -37,7 +37,6 @@
         public function remover(){
             echo 'Remover';
         }
-
     }
     interface CadastroInterface{
         public function remover();
