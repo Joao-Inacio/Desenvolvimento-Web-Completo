@@ -11,6 +11,7 @@
     
     <script>
         function requisitarPagina(url) {
+			document.getElementById('conteudo').innerHTML = ''
 
 			if (!document.getElementById('loading')) {
 			let imgLoading = document.createElement('img')
@@ -18,7 +19,7 @@
 			imgLoading.src = 'img/loading.gif'
 			imgLoading.className = 'rounded mx-auto d-block'
 
-			document.getElementById('conteudo').appendChild(imgLoading)
+			document.getElementById('conteudo').appendChild(imgLoading)		
 			}
 
             let ajax = new XMLHttpRequest();
@@ -31,9 +32,13 @@
             // console.log(ajax.readyState)
 
 			ajax.onreadystatechange =  () => {
-				if (ajax.readyState == 4){
-					console.log('Finalizado')
-					document.getElementById('loading').remove()
+				if (ajax.readyState == 4 && ajax.status == 200){
+					document.getElementById('conteudo').innerHTML = 'Finalizado com sucesso 200'
+					// document.getElementById('loading').remove()
+				}
+				if (ajax.readyState == 4 && ajax.status == 404){
+					document.getElementById('conteudo').innerHTML = 'Finalizado porém  com erro 404'
+					
 				}
 			}
 
@@ -65,7 +70,7 @@
 			<div class="col-md-4 center"></div>
 			<div class="col-md-4 center">
 				<a href="#" class="btn btn-primary" onclick="requisitarPagina('pagina_1_conteudo.html')">Página 1</a>
-				<a href="#" class="btn btn-primary" onclick="requisitarPagina('pagina_2_conteudo.html')">Página 2</a>
+				<a href="#" class="btn btn-primary" onclick="requisitarPagina('pagina_21_conteudo.html')">Página 2</a>
 				<a href="#" class="btn btn-primary" onclick="requisitarPagina('pagina_3_conteudo.html')">Página 3</a>
 			</div>
 			<div class="col-md-4 center"></div>
