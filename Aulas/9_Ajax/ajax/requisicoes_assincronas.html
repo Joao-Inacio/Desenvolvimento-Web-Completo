@@ -13,10 +13,21 @@
         function requisitarPagina(url) {
             let ajax = new XMLHttpRequest();
 
+            console.log(ajax.readyState)
+
+
             ajax.open('GET', url)
+
+            console.log(ajax.readyState)
+
+			ajax.onreadystatechange =  () => {
+				console.log(ajax.readyState)
+			}
+
+
             ajax.send()
 
-            console.log(ajax)
+
         }
 
     </script>
