@@ -11,17 +11,30 @@
     
     <script>
         function requisitarPagina(url) {
+
+			if (!document.getElementById('loading')) {
+			let imgLoading = document.createElement('img')
+			imgLoading.id = 'loading'
+			imgLoading.src = 'img/loading.gif'
+			imgLoading.className = 'rounded mx-auto d-block'
+
+			document.getElementById('conteudo').appendChild(imgLoading)
+			}
+
             let ajax = new XMLHttpRequest();
 
-            console.log(ajax.readyState)
+            // console.log(ajax.readyState)
 
 
             ajax.open('GET', url)
 
-            console.log(ajax.readyState)
+            // console.log(ajax.readyState)
 
 			ajax.onreadystatechange =  () => {
-				console.log(ajax.readyState)
+				if (ajax.readyState == 4){
+					console.log('Finalizado')
+					document.getElementById('loading').remove()
+				}
 			}
 
 
@@ -61,8 +74,8 @@
 		<div class="row">
 			<div class="col-md-1"></div>
 
-			<div class="col-md-10">
-			
+			<div class="col-md-10" id="conteudo">
+				
 			</div>
 
 			<div class="col-md-1"></div>
