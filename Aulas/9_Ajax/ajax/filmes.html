@@ -8,6 +8,8 @@
         <!-- bootstrap - link cdn -->
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+        <script src="xmltojson.js"></script>
+
         <script>
             function getFilmes() {
                 let xmlHttp = new XMLHttpRequest();
@@ -16,10 +18,18 @@
                 xmlHttp.onreadystatechange = () =>{
                     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
                         let XMLFilmes = xmlHttp.responseText
-                        console.log(XMLFilmes)
+
+                        let parser = new DOMParser()
+                        domFilmes = parser.parseFromString(XMLFilmes, 'text/xml')
+                        
+                        console.log(domFilmes)
+
+                        jsonFilmes = xmlToJson(domFilmes)
+                        console.log(jsonFilmes)
+
                     }
                     if (xmlHttp.readyState == 4 && xmlHttp.status == 404) {
-                        // 
+                        // Aqui vai a logica para erro
                     }
                 }
 
