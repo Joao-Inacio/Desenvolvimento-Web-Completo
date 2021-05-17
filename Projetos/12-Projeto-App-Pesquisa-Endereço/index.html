@@ -17,6 +17,8 @@
 						let dadosJSONText = xmlHttp.responseText
 						let dadosJSONobj = JSON.parse(dadosJSONText)
 
+
+
 						document.getElementById('endereco').value = dadosJSONobj.logradouro
 						document.getElementById('bairro').value = dadosJSONobj.bairro
 						document.getElementById('cidade').value = dadosJSONobj.localidade 
