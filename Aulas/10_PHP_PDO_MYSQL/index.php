@@ -29,7 +29,7 @@
         ';
         $stmt = $conexao->query($query);
 
-        $lista = $stmt->fetchAll();
+        $lista = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         echo '<pre>';
         print_r($lista);
