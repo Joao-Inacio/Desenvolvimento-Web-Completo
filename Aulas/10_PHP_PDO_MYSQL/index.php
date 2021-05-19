@@ -25,15 +25,24 @@
         $conexao->exec($query);*/
 
         $query = '
-            select * from tb_usuarios where id = 1
+            select * from tb_usuarios
         ';
-        $stmt = $conexao->query($query);
+        // $stmt = $conexao->query($query);
+        foreach ($conexao->query($query) as $key => $value) {
+            print_r($value);
+            echo '<br/> <hr/>';
+        }
 
-        $usuario = $stmt->fetch(PDO::FETCH_ASSOC); /*fatchAll*/ 
+        // $lista_usuario = $stmt->fetchAll(PDO::FETCH_ASSOC); /*fatchAll*/ 
 
-        echo '<pre>';
+        /*echo '<pre>';
         print_r($usuario);
-        echo'</pre>';
+        echo'</pre>';*/
+
+        /*foreach ($lista_usuario as $key => $value) {
+            echo $value['nome'];
+            echo '<hr />';
+        }*/
 
     } catch (PDOException $e) {
         echo '<pre>';
