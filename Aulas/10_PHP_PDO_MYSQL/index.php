@@ -25,14 +25,14 @@
         $conexao->exec($query);*/
 
         $query = '
-            select * from tb_usuarios
+            select * from tb_usuarios where id = 1
         ';
         $stmt = $conexao->query($query);
 
-        $lista = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $usuario = $stmt->fetch(PDO::FETCH_ASSOC); /*fatchAll*/ 
 
         echo '<pre>';
-        print_r($lista);
+        print_r($usuario);
         echo'</pre>';
 
     } catch (PDOException $e) {
