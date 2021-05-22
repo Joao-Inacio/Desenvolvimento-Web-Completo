@@ -3,6 +3,9 @@
     require "tarefa.service.php";
     require "conexao.php";
 
+    $acao = isset($_GET["acao"]) ? $_GET["acao"] : $acao;
+
+    if ($acao == 'inserir') {
 
     $tarefa = new Tarefa();
     $tarefa->__set('tarefa', $_POST['tarefa']);
@@ -14,6 +17,9 @@
     
 
     header('Location: nova_tarefa.php?inclusao=1');
+    }elseif ($acao == 'recuperar') {
+        echo 'Chegamos até aqui!';
+    }
 
 
 ?>
