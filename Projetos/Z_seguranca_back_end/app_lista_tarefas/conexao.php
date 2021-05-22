@@ -5,7 +5,7 @@
         private $user = 'root';
         private $pass = '';
 
-        public function connectar(){
+        public function conectar(){
             try {
                 
                 $conexao = new PDO(
@@ -13,7 +13,7 @@
                     "$this->user",
                     "$this->pass"
                 );
-                    return $conexao;
+                return $conexao;
 
             } catch (PDOException $e) {
                 echo '<p>'.$e->getMessage().'</p>';
