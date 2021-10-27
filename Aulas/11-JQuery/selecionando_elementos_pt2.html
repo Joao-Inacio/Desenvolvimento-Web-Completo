@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- <link rel='stylesheet' href='style.css'> -->
+        <!-- <script src="jquery-3.6.0.min.js"></script> -->
+        <title>JQuery</title>
+    </head>
+    <body>
+        <input type="text" placeholder="input 1">
+        <input type="text" placeholder="input 2">
+        <input type="text" placeholder="input 3">
+
+        <div>div 1</div>
+        <div>div 2</div>
+        <div>div 3</div>
+
+        <ul class="lista1">
+            <li>opção 1</li>
+            <li class="exemplo2">opção 2</li>
+            <li class="exemplo2">opção 3</li>
+        </ul>
+        <ul class="lista2">
+            <li class="exemplo2">opção 1</li>
+            <li class="exemplo2">opção 2</li>
+            <li>opção 3</li>
+        </ul>
+        <ul class="lista3">
+            <li>opção 1</li>
+            <li class="exemplo2">opção 2</li>
+            <li class="exemplo2">opção 3</li>
+        </ul>
+        <ul class="lista3">
+            <li class="exemplo2">opção 1</li>
+            <li class="exemplo2">opção 2</li>
+            <li>opção 3</li>
+        </ul>
+        
+    </body>
+    <script>
+        //
+        // console.log($('li.elemento1'))
+
+        console.log($('.lista1 .exemplo2'))
+
+        // Atuação sobre o array de retorno dos elementos selecionados
+        // :first = primeiro  
+        // :even = números pares
+        // :odd
+        // last = ultimos
+
+        console.log($('.lista3 .exemplo2:first'))
+        console.log($('.lista3 .exemplo2:last'))
+        console.log($('.lista3 .exemplo2:even'))
+
+
+    </script>
+</html>
