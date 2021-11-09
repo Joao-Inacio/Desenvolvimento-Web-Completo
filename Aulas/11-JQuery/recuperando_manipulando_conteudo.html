@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- <link rel='stylesheet' href='style.css'> -->
+        <!-- <script src="jquery-3.6.0.min.js"></script> -->
+        <title>JQuery</title>
+        <style>
+            #div1{
+                border: solid 1px black;
+                width: 150px;
+                height: 150px;
+                background-color: blue;
+            }
+            #div2{
+                border: solid 1px black;
+                width: 150px;
+                height: 150px;
+                background-color: red;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                console.log($('#div1').html()) // para recupera o conteudo interno
+                $('#div2').html('Hello word') // insere um valor ao conteudo interno
+            })
+        </script>
+    </head>
+    <body>
+        <div id="div1">
+            Div 1
+        </div>
+        <div id="div2">
+            Div 2
+        </div>
+        
+        
+    </body>
+</html>
