@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- <link rel='stylesheet' href='style.css'> -->
+        <!-- <script src="jquery-3.6.0.min.js"></script> -->
+        <title>JQuery</title>
+        <script>
+            $(document).ready(function() {
+                $('#lista1').append('<li>Item 4 </li>') // Adiciona o elemento no final
+                $('#lista2').prepend('<div>Item 0 </div>') // Adiciona o elemento no inicio
+                $('#lista2').after('<p>Hello word! </p>') // Adiciona o elemento depois e fora do elemento selecionado
+                $('#lista2').before('<p>Hello word! </p>') // Adiciona o elemento antes e fora do elemento selecionado
+                $('#lista1').remove() // remove o elemento selecionado
+                // $('#lista1').html('<p>Hello word! </p>') limpa todo o elemento e adicionar o novo valor
+            })
+        </script>
+    </head>
+    <body>
+        <ul id="lista1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <div id="lista2">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+        <hr>
+    </body>
+</html>
