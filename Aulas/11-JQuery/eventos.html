@@ -24,11 +24,19 @@
 				$('#dv1').scroll(function() {
 					$(this).css('background-color', 'blue')
 				})
+				$('#btn1').mousedown(() => {
+					$('#dv2').css('background-color', 'green')
+				})
+				$('#btn1').click(() => { // ou mouseup
+					$('#dv2').css('background-color', 'blue')
+				})
+				$('#btn2').dblclick(() => {
+					$('#dv2').css('background-color', 'yellow')
+				})
+				$('#dv2').mousemove((e) => { 
+					$('#resul').html('X: ' + e.offsetX + ' /Y: ' + e.offsetY)
+				})
 			})
-			
-			
-			
-			 
 
 		</script>
 	</head>
@@ -50,10 +58,10 @@
 			<hr />
 
 			<h3>Mouse</h3>
-			<button type="button">Clique aqui</button>
-			<button type="button">Clique aqui 2x</button>
-			<div style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px"></div>
-			<span>Resultado do evento sobre a div</span>
+			<button type="button" id="btn1">Clique aqui</button>
+			<button type="button" id="btn2">Clique aqui 2x</button>
+			<div id="dv2" style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px"></div>
+			<span>Resultado do evento sobre a div</span><span id="resul"></span>
 			<hr />
 
 			<h3>Teclado</h3>
