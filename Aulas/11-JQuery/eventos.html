@@ -59,7 +59,13 @@
 				$('#divInter').mouseleave(() => { // mouseleave mouseout
 					$('#resultDiv2').html('saiu')
 				})
-
+				// Teclado
+				$('#tecla').keydown(() => { 
+					$('#resutecla').html('Tecla Pressionada')
+				})
+				$('#tecla').keyup(() => { 
+					$('#resutecla').html('Tecla Liberada')
+				})
 			})
 
 		</script>
@@ -96,8 +102,8 @@
 
 			<h3>Teclado</h3>
 			<span>Nome:</span>
-			<input type="text" />
-			<span>Resultado do evento sobre o input</span>
+			<input id="tecla" type="text" />
+			<span id="resutecla">Resultado do evento sobre o input</span>
 			<hr />
 
 			<h3>Formulário</h3>
